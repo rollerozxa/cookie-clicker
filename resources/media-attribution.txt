@@ -1,0 +1,5 @@
+
+cookie.png:
+    License: Pixabay Content License (https://pixabay.com/sv/service/license-summary/)
+    Author: Alexas_Fotos
+    Source: https://pixabay.com/sv/photos/joker-roligt-sm%C3%A5kakor-smaskigt-mat-3114977/
