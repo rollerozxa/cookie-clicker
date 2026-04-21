@@ -1,0 +1,28 @@
+name: Build app
+
+on:
+  - push
+  - pull_request
+  - workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v6
+
+    - name: Set up OpenJDK
+      uses: actions/setup-java@v5
+      with:
+        java-version: '21'
+        distribution: 'temurin'
+
+    - name: Run build script
+      run: ./build.sh
+    
+    - name: Upload output as artifact
+      uses: actions/upload-artifact@v7
+      with:
+          path: cookie.jar
+          archive: false
